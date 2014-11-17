@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <META http-equiv="Content-Style-Type" content="text/css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/mainstyles.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<!-- Header -->
+<section id="header">   <!-- Start of Section "Header"-->
+    <header>                <!--Start of "Header-->
+        <nav>                   <!--Beginning of Navigation-->
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#banner">Info</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#media">Videos</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>              <!--End of Navigation-->
+        <h1>Adventures</h1>
+        <p>2014 Explorations</p>
+    </header>               <!--End of "Header-->
+    <footer>            <!--Start of Footer for Sec. Header-->
+        <br>
+         <a href="#banner"><input type="submit" value="Explore"/></a>
+        <br>
+ <!-- Top or Designated back button-->
+        <div id="des-top">
+            <a href="#header"><img src="images/arrow-up_03.png"></a>
+        </div>
+    </footer>               <!--End of Footer for Sec. Header-->
+</section>                  <!--End of Section "Header"--->
+<!-- Banner -->
+<section id="banner">           <!--Start of Section "Banner"-->
+    <header>
+        <h2>Explore Here</h2>
+    </header>
+    <p>This is a piece of my life's journey through photos and videos. It is a visual documentation of my adventures. It's small glimpse  of both nature and it's seasonal changes. </p>
+    <footer class="arrow">
+        <a href="#gallery"><img src="images/arrown-down_03.png"></a>
+    </footer>
+</section>
+<!-- Portfolio -->
+<article class="container-box">
+    <header>
+        <h2> My Photos</h2>
+        <div class="thumbnails" id="gallery">
+           <ul>
+            <li>01<img onmouseover="preview.src=img1.src" name="img1" src="images/IMG_7813.jpg" alt="" /></li>
+            <li>02<img onmouseover="preview.src=img2.src" name="img2" src="images/IMG_5813.jpg" alt="" /></li>
+            <li>03<img onmouseover="preview.src=img3.src" name="img3" src="images/IMG_6519.JPG" alt="" /></li>
+            <li>04<img onmouseover="preview.src=img4.src" name="img4" src="images/IMG_7814.JPG" alt="" /></li>
+            <li>05<img onmouseover="preview.src=img5.src" name="img5" src="images/IMG_4277.JPG" alt="" /></li>
+            <li>06<img onmouseover="preview.src=img6.src" name="img6" src="images/IMG_4268.JPG" alt="" /></li>
+            <li>07<img onmouseover="preview.src=img7.src" name="img7" src="images/IMG_4971.JPG" alt="" /></li>
+           </ul>
+        </div>
+        <br>
+        <div class="preview" align="center">
+            <img name="preview" src="images/IMG_4268.JPG" alt=""/>
+        </div>
+    </header>
+    <footer class="arrow">
+        <a href="#media"><img src="images/arrown-down_03.png"></a>
+    </footer>
+</article>
+<!-- Feature 2 -->
+<article class="container-box" id="media">
+        <header>
+            <h2>Videos</h2></header>
+    <div class="video">
+    <iframe src="http://youtube.com/embed/3Wm4lxVCa1E" frameborder="0" allowfullscreen>
+        </iframe>
+    </div>
+    <footer class="arrow">
+        <a href="#table"><img src="images/arrown-down_03.png"></a>
+    </footer>
+</article>
+<section class="container-box" id="table-content">           <!--Start of Section "Banner"-->
+    <h2>Adventure Chart</h2>
+    <div id="table">
+        <table >
+            <tr>
+                <td>Season</td>
+                <td>Hiking</td>
+                <td>Photography</td>
+                <td>Level</td>
+            </tr>
+            <tr>
+                <td>Autumn</td>
+                <td>Autumn</td>
+                <td>Autumn</td>
+                <td>Autumn</td>
+            </tr>
+            <tr>
+                <td>Winter</td>
+                <td>Winter</td>
+                <td>Winter</td>
+                <td>Winter</td>
+            </tr>
+            <tr>
+                <td>Spring</td>
+                <td>Spring</td>
+                <td>Spring</td>
+                <td>Spring</td>
+            </tr>
+            <tr>
+                <td>Summer</td>
+                <td>Summer</td>
+                <td>Summer</td>
+                <td>Summer</td>
+            </tr>
+        </table>
+    </div>
+    <footer class="arrow">
+        <a href="#gallery"><img src="images/arrown-down_03.png"></a>
+    </footer>
+</section>
+<!-- Contact -->
+<article class="container-box" id="contact">
+    <header>
+        <h2>Say Hello</h2>
+        <p>Share your adventures with me</p>
+    </header>
+    <form method="post" action="#">
+        <input type="text" class="text" name="name" placeholder="Name" />
+        <input type="text" class="text" name="email" placeholder="Email" />
+        <textarea name="message" placeholder="Message"></textarea>
+        <br>
+        <input type="submit" value="Send Message" />
+    </form>
+</article>
+<section id="footer">
+    <div class="copyright">
+        <ul class="menu">
+            <li>&copy; 2014 P. Yim</li>
+        </ul>
+    </div>
+</section>
+</body>
+</html>

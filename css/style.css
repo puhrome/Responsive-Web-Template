@@ -1,0 +1,438 @@
+
+
+/*********************************************************************************/
+/* Basic                                                                         */
+/*********************************************************************************/
+
+body {
+    margin: 1.04166667%;
+    padding: 1.04166667%;
+}
+
+body,input,textarea,select
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 16pt;
+    line-height: 1.75em;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #3a3939;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1.75em;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
+{
+    color: inherit;
+    text-decoration: none;
+}
+
+h2
+{
+    font-size: 1.25em;
+    letter-spacing: 8px;
+}
+
+h3
+{
+    font-size: 1em;
+    letter-spacing: 5px;
+}
+
+a
+{
+    color: #4d4d4d;
+    -moz-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -webkit-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -o-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -ms-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    text-decoration: none;
+}
+
+a:hover
+{
+    border-bottom-color: rgba(53,184,143,0);
+}
+
+header
+{
+    margin-bottom: 1em;
+}
+
+header p
+{
+    display: block;
+    margin: 0.5em 0 0 0;
+    padding: 0 0 1.5em 0;
+}
+
+footer
+{
+    margin-top: 1em;
+}
+
+br.clear
+{
+    clear: both;
+}
+
+/* Sections/Article */
+
+section, article {
+    margin-bottom: 3em;
+}
+
+section > :last-child, article > :last-child {
+    margin-bottom: 0;
+}
+
+section:last-child, article:last-child {
+    margin-bottom: 0;
+}
+
+/* Image */
+
+.image
+{
+    display: inline-block;
+    border: 0;
+}
+
+.image img
+{
+    display: block;
+    width: 100%;
+}
+
+.image.featured
+{
+    display: block;
+    width: 100%;
+    margin: 0 0 2em 0;
+}
+
+.image.fit
+{
+    display: block;
+    width: 100%;
+}
+
+.box-left image.left {
+    float: left;
+    margin: 0 2em 2em 0;
+}
+
+.image.centered
+{
+    display: block;
+    margin: 0 0 2em 0;
+}
+
+.image.centered img
+{
+    margin: 0 auto;
+    width: auto;
+}
+
+/* List */
+nav ul li {
+    width: 100%;
+
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: inline-flex;
+    margin: 0;
+    padding: 0;
+    font-size: .5em;
+    width: 100%;
+
+}
+#header nav li {
+    padding:0 2% 5% 2%;
+}
+
+form {
+    display: block;
+    margin: 0 auto;
+    padding: 0 10.416667%;
+    width: 77.083333%;
+    color: #ffffff;
+}
+
+form label {
+    display: block;
+    margin: 2% 0;
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"], form select, form textarea {
+    -webkit-appearance: none;
+    display: block;
+    border: 5px solid #ffffff;
+    background: #166172;
+    width: 100%;
+    padding: 1.315789%;
+    -moz-transition: background-color 0.35s ease-in-out;
+    -webkit-transition: background-color 0.35s ease-in-out;
+    -o-transition: background-color 0.35s ease-in-out;
+    -ms-transition: background-color 0.35s ease-in-out;
+    transition: background-color 0.35s ease-in-out;
+}
+
+form input[type="text"], form input[type="email"], form input[type="password"], form select {
+    line-height: 1em;
+}
+
+form textarea {
+    min-height: 12em;
+}
+
+form input[type="text"]:focus, form input[type="email"]:focus, form input[type="password"]:focus, form select:focus, form textarea:focus {
+    background: #ffffff ;
+}
+
+/* Button */
+
+input[type="submit"] {
+    -webkit-appearance: none;
+    position: relative;
+    display: inline-block;
+    border: 1px solid #ffffff;
+    background: #4d4d4d;
+    color: #ffffff;
+    cursor: pointer;
+    text-decoration: none;
+    outline: 0;
+    padding: 1em 3em 1em 3em;
+    text-align: center;
+    border-radius: .15em;
+    font-weight: 400;
+    -moz-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -webkit-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -o-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -ms-transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out;
+}
+
+input[type="submit"]:hover {
+    background: #ffffff;
+    color: #4d4d4d;
+    border: 1px solid #4d4d4d;
+}
+
+input[type="submit"].style3 {
+    background: #3a3939;
+    color: #ffffff;
+}
+
+input[type="submit"].style3:hover {
+    background-color: #ffffff;
+    border: 1px solid #4d4d4d;
+    color: #4d4d4d;
+}
+
+#des-top {
+    position: fixed;
+    display: inline-flex;
+    margin: 0 auto;
+    padding: 0 5%;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+}
+
+.container-box {
+    text-align: center;
+    margin: 1.06383%;
+    padding: 1.06383%;
+}
+
+.container-box header
+{
+    display: inline-block;
+    color: #166172;
+    padding: 2% 4%;
+    margin: 0;
+    text-align: center;
+}
+
+.container-box#contact {
+    padding: 2% 0;
+}
+
+/*********************************************************************************/
+/* Header                                                                        */
+/*********************************************************************************/
+
+#header
+{
+    position: relative;
+    color: #4d4d4d;
+    text-align: center;
+    margin: 0;
+    padding: 5em 0 10em 0;
+    cursor: default;
+    border-bottom: 1px solid #4d4d4d;
+}
+
+#header header
+{
+    display: inline-block;
+    padding: 0 0 4.5em 0;
+}
+
+#header header h1
+{
+    font-weight: 600;
+    font-size: 2em;
+    letter-spacing: 10px;
+}
+
+#header header p
+{
+    border-top: 1px solid #777;
+    color: #777;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 5% 0 40% 0;
+    margin-top: 0.35em;
+}
+
+#header footer
+{
+    position: absolute;
+    bottom: 9em;
+    margin: 0;
+    padding-top: 15%;
+    width: 100%;
+}
+#header footer img {
+    opacity: .6;
+    width: auto;
+}
+#contact.container-box header{
+    color: #4d4d4d;
+}
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+#banner
+{
+    position: relative;
+    color: #4d4d4d;
+    text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
+    text-align: center;
+    padding: 5% 0 5% 0;
+    margin: 0;
+    background-size: 125% auto;
+}
+
+#banner header
+{
+    margin: 0 0 2em 0;
+}
+
+#banner header h2
+{
+    font-weight: 400;
+    font-size: 1.75em;
+    letter-spacing: 8px;
+}
+
+#banner p
+{
+    margin: 0;
+}
+
+#banner footer
+{
+    margin: 2% 0;
+    padding: 5% 0;
+    border-bottom: 1px solid #4d4d4d;
+}
+
+
+/*********************************************************************************/
+/* Footer                                                                        */
+/*********************************************************************************/
+
+#footer
+{
+    position: relative;
+    color: #4d4d4d;
+    text-align: center;
+    margin: 10em 0 0 0;
+}
+
+
+#footer .copyright
+{
+    margin: 0 0 9em 0;
+    font-size: 0.8em;
+}
+/*  TEMP */
+.thumbnails {
+    padding-top: 2%;
+    overflow: hidden;
+}
+.thumbnails img {
+    position: relative;
+    -moz-transition: opacity 0.5s ease-out;
+    -webkit-transition: opacity 0.5s ease-out;
+    -o-transition: opacity 0.5s ease-out;
+    -ms-transition: opacity 0.5s ease-out;
+    transition: opacity 0.55s ease-out;
+    opacity: .5;
+}
+
+.thumbnails img:hover {
+    cursor:pointer;
+    opacity: 1;
+
+}
+
+.preview img {
+    position: relative;
+    width: 93.023256%;
+    padding: 0 5%;
+    height: auto;
+    margin: 0 auto;
+
+}
+.video {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+    opacity: .7;
+}
+
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.arrow {
+    padding: 2% 0 5% 0;
+    border-bottom: 1px solid #4d4d4d;
+    opacity: .6;
+}
+/* ======  T A B L E =====*/
+#table tr:hover {
+
+
+}
