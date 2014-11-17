@@ -14,14 +14,12 @@ body,input,textarea,select
     font-family: 'Source Sans Pro', sans-serif;
     font-size: 16pt;
     line-height: 1.75em;
-    font-weight: 300;
     letter-spacing: 1px;
     color: #3a3939;
 }
 
 h1,h2,h3,h4,h5,h6
 {
-    font-weight: 400;
     text-transform: uppercase;
     line-height: 1.75em;
 }
@@ -34,16 +32,10 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
 
 h2
 {
-    font-size: 1.25em;
+    font-size: 1.375em;
     letter-spacing: 8px;
+    font-weight: normal;
 }
-
-h3
-{
-    font-size: 1em;
-    letter-spacing: 5px;
-}
-
 a
 {
     color: #4d4d4d;
@@ -57,12 +49,13 @@ a
 
 a:hover
 {
-    border-bottom-color: rgba(53,184,143,0);
-}
-
-header
-{
-    margin-bottom: 1em;
+    color: red;
+    -moz-transition: scale 0.35s ease-in-out, color 0.35s ease-in-out;
+    -webkit-transition:  0.35s ease-in-out, color 0.35s ease-in-out;
+    -o-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    -ms-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
+    text-decoration: none;
 }
 
 header p
@@ -248,13 +241,13 @@ input[type="submit"].style3:hover {
     padding: 1.06383%;
 }
 
-.container-box header
-{
+.container-box header {
     display: inline-block;
-    color: #166172;
+    color: #4d4d4d;
     padding: 2% 4%;
     margin: 0;
     text-align: center;
+    font-size: 1.75em;
 }
 
 .container-box#contact {
