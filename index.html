@@ -2,7 +2,7 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>My Adventures</title>
     <META http-equiv="Content-Style-Type" content="text/css">
     <link rel="stylesheet" type="text/css" href="css/layout.css">
     <link rel="stylesheet" type="text/css" href="css/mainstyles.css">
@@ -12,16 +12,16 @@
 <body>
 <!-- Header -->
 <section id="header">   <!-- Start of Section "Header"-->
+    <nav>                   <!--Beginning of Navigation-->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#banner">Info</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#media">Videos</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>              <!--End of Navigation-->
     <header>                <!--Start of "Header-->
-        <nav>                   <!--Beginning of Navigation-->
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#banner">Info</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#media">Videos</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>              <!--End of Navigation-->
         <h1>Adventures</h1>
         <p>2014 Explorations</p>
     </header>               <!--End of "Header-->
@@ -36,32 +36,33 @@
     </footer>               <!--End of Footer for Sec. Header-->
 </section>                  <!--End of Section "Header"--->
 <!-- Banner -->
-<section id="banner">           <!--Start of Section "Banner"-->
+<section class="container-box" id="banner">           <!--Start of Section "Banner"-->
     <header>
         <h2>Explore Here</h2>
     </header>
-    <p>This is a piece of my life's journey through photos and videos. It is a visual documentation of my adventures. It's small glimpse  of both nature and it's seasonal changes. </p>
+    <p>This is a piece of my life's journey through photos and videos. It is a visual documentation of my adventures. <br>It's small glimpse  of both nature and it's seasonal changes. </p>
     <footer class="arrow">
-        <a href="#gallery"><img src="images/arrown-down_03.png"></a>
+        <a href="#photo-box"><img src="images/arrown-down_03.png"></a>
     </footer>
 </section>
 <!-- Portfolio -->
-<article class="container-box">
-    <header>
+<article class="container-box" id="photo-box">
+ <header>
         <h2> My Photos</h2>
-        <div class="thumbnails" id="gallery">
-           <ul>
-            <li>01<img onmouseover="preview.src=img1.src" name="img1" src="images/IMG_7813.jpg" alt="" /></li>
-            <li>02<img onmouseover="preview.src=img2.src" name="img2" src="images/IMG_5813.jpg" alt="" /></li>
-            <li>03<img onmouseover="preview.src=img3.src" name="img3" src="images/IMG_6519.JPG" alt="" /></li>
-            <li>04<img onmouseover="preview.src=img4.src" name="img4" src="images/IMG_7814.JPG" alt="" /></li>
-            <li>05<img onmouseover="preview.src=img5.src" name="img5" src="images/IMG_4277.JPG" alt="" /></li>
-            <li>06<img onmouseover="preview.src=img6.src" name="img6" src="images/IMG_4268.JPG" alt="" /></li>
-            <li>07<img onmouseover="preview.src=img7.src" name="img7" src="images/IMG_4971.JPG" alt="" /></li>
-           </ul>
+        <div class="thumbnails" id="gallery1">
+            <img onmouseover="preview.src=img1.src" name="img1" src="images/IMG_4050.jpg" alt="" />
+            <img onmouseover="preview.src=img2.src" name="img2" src="images/IMG_6519.JPG" alt="" />
         </div>
-        <br>
-        <div class="preview" align="center">
+     <div class="thumbnails" id="gallery2">
+     <img onmouseover="preview.src=img3.src" name="img3" src="images/IMG_7814.JPG" alt="" />
+            <img onmouseover="preview.src=img4.src" name="img4" src="images/IMG_2927.JPG" alt="" />
+        </div>
+     <div class="thumbnails" id="gallery3">
+         <img onmouseover="preview.src=img5.src" name="img5" src="images/IMG_2927.JPG" alt="" />
+         <img onmouseover="preview.src=img6.src" name="img6" src="images/IMG_4050.JPG" alt="" />
+     </div>
+     <br>
+        <div class="preview" id="large-img">
             <img name="preview" src="images/IMG_4268.JPG" alt=""/>
         </div>
     </header>
@@ -118,7 +119,7 @@
         </table>
     </div>
     <footer class="arrow">
-        <a href="#gallery"><img src="images/arrown-down_03.png"></a>
+        <a href="#contact"><img src="images/arrown-down_03.png"></a>
     </footer>
 </section>
 <!-- Contact -->
