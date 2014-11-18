@@ -125,12 +125,15 @@ section:last-child, article:last-child {
 nav ul li {
     width: 100%;
     float: left;
+    text-align: justify;
+    border: 1px solid red;
+    padding-left: 2%;
 
 }
 
 nav ul, ul {
     list-style-type: none;
-    display: inline-block;
+    display: inline-flex;
     margin: 0;
     padding: 0;
     font-size: 1em;
@@ -138,7 +141,7 @@ nav ul, ul {
 
 }
 nav ul li a {
-    font-size: 1em;
+    font-size: .75em;
 
 }
 nav ul li a:hover {
@@ -154,7 +157,7 @@ nav ul li a:hover {
     transform: scale(2);
 }
 #header nav li {
-    padding:0 2% 1% 2%;
+    padding:0 1% 2% 1%;
 }
 
 form {
@@ -411,6 +414,20 @@ input[type="submit"].style3:hover {
     margin: 0 auto;
 
 }
+.thumbnails img {
+    width: 100%;
+    padding: 1.8018018%;
+}
+#gallery1, #gallery2, #gallery3 {
+    max-width: 33%;
+    display: inline-block;
+    float: right;
+}
+#large-img {
+    max-width: 50%;
+    float: left;
+
+}
 .video {
     position: relative;
     padding-bottom: 56.25%;
@@ -434,7 +451,6 @@ input[type="submit"].style3:hover {
 }
 /* ======  T A B L E =====*/
 #table {
-    width: 100%;
     padding: 10px;
 }
 #table tr {
@@ -443,19 +459,5 @@ input[type="submit"].style3:hover {
 }
 #table td {
     height: 2em;
-    width: 100%;
 }
-.thumbnails img {
-    width: 100%;
-    padding: 1.8018018%;
-}
-#gallery1, #gallery2, #gallery3 {
-    max-width: 33%;
-    display: inline-block;
-    float: right;
-}
-#large-img {
-    max-width: 50%;
-    float: left;
 
-}
