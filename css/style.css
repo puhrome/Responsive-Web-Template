@@ -50,13 +50,7 @@ a
 
 a:hover
 {
-    color: red;
-    -moz-transition: scale 0.35s ease-in-out, color 0.35s ease-in-out;
-    -webkit-transition:  0.35s ease-in-out, color 0.35s ease-in-out;
-    -o-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
-    -ms-transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
-    transition: border-color 0.35s ease-in-out, color 0.35s ease-in-out;
-    text-decoration: none;
+    color: #79B3C9;
 }
 
 header p
@@ -142,6 +136,22 @@ nav ul, ul {
     font-size: 1em;
     width: 100%;
 
+}
+nav ul li a {
+    font-size: 1em;
+
+}
+nav ul li a:hover {
+    -webkit-transistion: all 1s ease-in, 1s ease-out;
+    -moz-transition: all 1s ease-in, 1s ease-out;
+    -o-transition: all 1s ease-in, 1s ease-out;
+    -ms-transition: all 1s ease-in, 1s ease-out;
+    transition: all 1s ease-in, 1s ease-out;
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
+    transform: scale(2);
 }
 #header nav li {
     padding:0 2% 1% 2%;
