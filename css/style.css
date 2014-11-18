@@ -121,17 +121,17 @@ section:last-child, article:last-child {
 /* List */
 #header ul {
     text-align: justify;
+    width: 97.9166667%
+    color: #ffffff;
 }
 nav ul li {
     width: 100%;
     float: left;
-    text-align: justify;
-    border: 1px solid red;
-    padding-left: 2%;
-
+    padding-left: .531915%;
+    background-color: #166172;
 }
 
-nav ul, ul {
+nav ul {
     list-style-type: none;
     display: inline-flex;
     margin: 0;
@@ -145,21 +145,23 @@ nav ul li a {
 
 }
 nav ul li a:hover {
-    -webkit-transistion: all 1s ease-in, 1s ease-out;
-    -moz-transition: all 1s ease-in, 1s ease-out;
-    -o-transition: all 1s ease-in, 1s ease-out;
-    -ms-transition: all 1s ease-in, 1s ease-out;
-    transition: all 1s ease-in, 1s ease-out;
-    -webkit-transform: scale(2);
-    -moz-transform: scale(2);
-    -o-transform: scale(2);
-    -ms-transform: scale(2);
-    transform: scale(2);
+    -webkit-transistion: all 1s ease-in, 1s ease;
+    -moz-transition: all 1s ease-in, 1s ease;
+    -o-transition: all 1s ease-in, 1s ease;
+    -ms-transition: all 1s ease-in, 1s ease;
+    transition: all 1s ease-in, 1s ease;
+    -webkit-transform: scale(1.25), scale(-1.25);
+    -moz-transform: scale(1.25),scale(-1.25);
+    -o-transform: scale(1.25), scale(-1.25);
+    -ms-transform: scale(.25), scale(-1.25);
+    transform: scale(1.25), scale(-1.25);
 }
 #header nav li {
-    padding:0 1% 2% 1%;
+    padding:0 1%;
 }
-
+ul {
+    list-style-type: none;
+}
 form {
     display: block;
     margin: 0 auto;
