@@ -17,11 +17,14 @@ body,input,textarea,select
     letter-spacing: 1px;
     color: #3a3939;
 }
-
+header {
+    position: relative;
+}
 h1,h2,h3,h4,h5,h6
 {
     text-transform: uppercase;
     line-height: 1.75em;
+    position: relative;
 }
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a
@@ -41,10 +44,8 @@ h2
 
 header p
 {
-    position: relative;
-    display: block;
-    margin: 1.04166667%;
-    padding-bottom: 1.04166667%;
+    float: left;
+    width: 100%;
 }
 
 /* Image */
@@ -293,9 +294,7 @@ input[type="submit"].style3:hover {
 
 #header header h1
 {
-    font-weight: 600;
-    font-size: 2em;
-    letter-spacing: 10px;
+    font: 2em "Archistico Simple", serif;
 }
 
 #header header p
@@ -306,7 +305,9 @@ input[type="submit"].style3:hover {
     font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 3px;
-    padding: 15% 0;
+    padding: 1.06383% 0;
+    float: left;
+    width: 100%;
 }
 
 #header footer
@@ -316,6 +317,7 @@ input[type="submit"].style3:hover {
     margin: 0;
     padding-top: 5%;
     width: 100%;
+    float: left;
 }
 #header footer img {
     opacity: .6;
@@ -338,7 +340,6 @@ input[type="submit"].style3:hover {
 {
     position: relative;
     color: #4d4d4d;
-    text-shadow: 0 0 0.5px rgba(255,255,255,0.25);
     text-align: center;
     padding: 5% 0 5% 0;
     margin: 0;
@@ -387,8 +388,10 @@ input[type="submit"].style3:hover {
     margin: 0 0 9em 0;
     font-size: 0.8em;
 }
-/*  TEMP */
-.thumbnails {
+
+/*********************************************************************************/
+/* Images   and    Videos                                                        */
+/*********************************************************************************/.thumbnails {
     padding-top: 2%;
     overflow: hidden;
 }
@@ -451,9 +454,12 @@ input[type="submit"].style3:hover {
     padding: 2% 0 5% 0;
     opacity: .6;
 }
-/* ======  T A B L E =====*/
+/*********************************************************************************/
+/* Table                                                                        */
+/*********************************************************************************/
 #table {
-    padding: 10px;
+    margin: 0 auto;
+
 }
 #table tr {
     font-size: 1.375em;
